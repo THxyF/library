@@ -72,7 +72,7 @@ function rk45(x_0, t_0, f, h_0, max){
             h *= d;
             //console.log(h);
         
-            if(d < h_0/20){
+            if(d < h_0/2){
                 -- life;
                 console.log(h);
             }
