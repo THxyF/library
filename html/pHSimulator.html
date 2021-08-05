@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/pHSimulator.css">
+</head>
+<body>
+    <div id="main">
+        <h1>pH Simulator by THxyF</h1>
+        <h2>inspired by<a href="https://zenn.dev/toga/articles/equilibrium-simulation">二分探索を用いた酸塩基平衡シミュレーション</a></h2>
+        <input type="button" id="stop" onclick="stopSim()" value="stop">
+        <input type="button" id="resume" onclick="resumeSim()" value="resume">
+        <input type="button" id="reset" onclick="resetSim()" value="reset">
+        
+        pH=<input type="text" id="out" value="7">
+        
+        <div class="input">
+            価数:<input type="text" id="n" value="1" onkeydown="addPKS(this)">
+            <div id="pks">
+                解離定数:10^-(<input type="text" id="pk1" value="1">)
+            </div>
+            濃度:<input type="text" id="c" value="0">[mol/L]
+        </div>
+        
+        <input type="button" id="add" onclick="addAcid()" value="add">
+    </div>
+    <script type="text/javascript" src="../js/pHSimulator.js"></script>
+</body>
+</html>
+

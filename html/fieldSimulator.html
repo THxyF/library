@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/fieldSimulator.css">
+</head>
+<body>
+    <div id="main">
+        <h1>Field Simulator by THxyF</h1>
+        <input type="button" id="stopB" onclick="stopField()" value="stop">
+        <input type="button" id="resumeB" onclick="resumeField()" value="resume">
+        <input type="button" id="clearB" onclick="clearField()" value="clear objects">
+        <input type="button" id="runB" onclick="runField()" value="next step">
+        
+        a=<input type="text" id="a" value="1000">
+        b=<input type="text" id="b" value="20000">
+        
+        m=<input type="text" id="m" value="50000">
+        r=<input type="text" id="r" value="1">
+        q=<input type="text" id="q" value="0">
+        v_x=<input type="text" id="v_x" value="0">
+        v_y=<input type="text" id="v_y" value="0">
+        
+        <input type="button" id="reloadArgsB" onclick="reloadArgs()" value="submit">
+        
+        <div id="display">
+            <canvas id="field" width="512px" height="256px">
+                ERROR:CANVAS IS NOT SUPPORTED BY THIS BROWSER.
+            </canvas>
+        </div>
+    </div>
+    <script type="text/javascript" src="../js/fieldSimulator.js"></script>
+</body>
+</html>
+
